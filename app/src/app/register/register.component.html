@@ -1,0 +1,26 @@
+<div class="py-5">
+    <h3>Register Now</h3>
+<form (ngsubmit)="submitregister(registerform)" [formGroup]="registerform">
+    <div class="my-2">
+        <label for="name">name</label>
+        <input FormControlName="name" type="text"name ="name" class="form-control" id="name">
+    </div>
+    <div class="my-2">
+        <label for="email">email</label>
+        <input FormControlName="email" type="email"name ="email" class="form-control" id="email">
+    </div>
+    <div class="my-2">
+        <label for="password">password</label>
+        <input FormControlName="password" type="password"name ="password" class="form-control" id="password">
+    </div>
+    <div class="my-2">
+        <label for="repassword">repassword</label>
+        <input FormControlName="repassword" type="password"name ="repassword" class="form-control" id="repassword">
+    </div>
+    <div class="my-2">
+        <label for="phone">phone</label>
+        <input FormControlName="phone" type="tel"name ="phone" class="form-control" id="phone">
+    </div>
+    <button   type="submit" class="btn btn-success d-block ms-auto">Register</button>
+</form>
+</div>
